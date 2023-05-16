@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Link CSS -->
+		<link rel="stylesheet" href="./style.css" />
+
+		<title>Form Validation | Rahul Sharma</title>
+	</head>
+	<body>
+		<main class="container">
+			<h1>Form Validation</h1>
+			<form action="#" method="get" class="form" onsubmit=" return Validation()">
+				<!-- Name -->
+				<span
+					><input type="text" name="name" id="userName" placeholder="Enter Name..." />
+					<p id="nameSp"></p
+				></span>
+
+				<!-- Password -->
+				<span
+					><input
+						type="password"
+						name="password"
+						id="password"
+						placeholder="Password..." />
+					<p id="passwordSp"></p
+				></span>
+
+				<!-- Confirm Password -->
+				<span
+					><input
+						type="password"
+						name="cnfPassword"
+						id="cnfPassword"
+						placeholder="Cofirm Password..." />
+					<p id="cnfPasswordSp"></p
+				></span>
+
+				<!-- Email -->
+				<span
+					><input type="text" name="email" id="email" placeholder="Email..." />
+					<p id="emailSp"></p
+				></span>
+
+				<!-- Mobile Number -->
+				<span>
+					<input type="number" name="mobile" id="mobile" placeholder="Mobile No..." />
+					<p id="mobileSp"></p>
+				</span>
+				<span class="btn-cont">
+					<!-- Submit Button -->
+					<button id="submitBtn">Submit</button>
+
+					<!-- Reset Button -->
+					<button type="reset" id="resetBtn">Reset</button>
+				</span>
+			</form>
+		</main>
+
+		<!-- Script file -->
+		<script src="./script.js"></script>
+	</body>
+</html>

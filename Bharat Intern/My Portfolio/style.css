@@ -1,0 +1,388 @@
+/* Make sure that padding behaves as expected */
+* {
+	font-family: "Poppins", sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+	width: 5px;
+}
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+/* 88888888888888888888 */
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+}
+
+.navbar {
+	width: 100%;
+	height: fit-content;
+	background-color: #000;
+	transition: all 1s ease;
+}
+nav.sticky {
+	position: fixed;
+	background-color: #8500cde7;
+}
+.navbar .max-width {
+	width: 100%;
+	height: 100%;
+	padding: 2em 5em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.navbar .max-width h1 {
+	font-size: 2em;
+	cursor: pointer;
+	color: #fff;
+	letter-spacing: 1.2px;
+}
+#lio {
+	color: #9b1ddf;
+	transition: all 0.3s ease;
+}
+.navbar .max-width ul {
+	width: 100%;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	gap: 30px;
+}
+
+.navbar .max-width ul li a {
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 1.1px;
+	color: #fff;
+}
+.navbar .max-width ul:hover li a {
+	color: #51d32d;
+	transition: all 0.7s ease;
+}
+.navbar .max-width ul:hover li a:hover {
+	color: #ffff00;
+	transition: all 0.7s ease;
+}
+#humberger i {
+	display: none;
+	color: #fff;
+	font-size: 25px;
+}
+.navbar .max-width ul.show {
+	display: flex;
+}
+.home {
+	background: url("./assests/bg.jpg") no-repeat top;
+	background-size: cover;
+	height: 100vh;
+	background-attachment: fixed;
+}
+.home div {
+	padding: 8%;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+}
+.home p:first-child {
+	font-size: 2em;
+}
+.home h1 {
+	font-size: 4em;
+}
+.home p:last-child {
+	font-size: 3em;
+}
+.text {
+	color: #fff;
+}
+#typing,
+#typing-2 {
+	color: #8500cd;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+}
+.about,
+.mySkills,
+.contact {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.page-heading {
+	padding-top: 4%;
+	text-align: center;
+}
+.page-heading h1 {
+	font-size: 2.5em;
+}
+.page-heading p {
+	font-size: 1.2em;
+	border-bottom: 1.2px solid #000;
+	color: #8500cd;
+}
+.about-container,
+.mySkills-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 4%;
+}
+.about-left,
+.mySkills-left {
+	width: 49.5%;
+	text-align: center;
+}
+.about-left img {
+	width: 60%;
+	border-radius: 10px;
+	box-shadow: 10px 10px 5px #5e585c;
+}
+.about-right,
+.mySkills-right,
+.contact-right {
+	width: 49.5%;
+}
+.about-right h2 {
+	font-size: 1.5em;
+}
+.about-right p {
+	width: 95%;
+	font-size: 1.1em;
+}
+.about-right .social-media {
+	margin: 0.1em;
+	font-size: 2em;
+}
+.about-right .social-media a {
+	margin: 0 0.5em 0 0.1em;
+	color: #8500cd;
+}
+.about-right .social-media a:hover {
+	color: #16bff3;
+	transition: all 0.5s ease;
+}
+.contact-right form button,
+.about-right a button {
+	cursor: pointer;
+	padding: 0.5em 1.5em;
+	border: 2px solid #8500cd;
+	background-color: #8500cd;
+	border-radius: 6px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #fff;
+}
+.about-right a button:hover,
+.contact-right form button:hover {
+	background-color: #fff;
+	color: #8500cd;
+	transition: all 0.5s ease;
+}
+.mySkills-left h2 {
+	font-weight: 600;
+	text-align: start;
+}
+.mySkills-left p {
+	text-align: start;
+	margin: 10px;
+	width: 85%;
+	font-size: 1.2em;
+}
+.mySkills-left p:last-child {
+	text-decoration: underline;
+	color: #8500cd;
+	cursor: pointer;
+}
+.bar-container {
+	width: 100%;
+	background-color: #ddd;
+}
+
+.skills {
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: white;
+}
+
+.html {
+	width: 90%;
+	background-color: #04aa6d;
+}
+.css {
+	width: 80%;
+	background-color: #2196f3;
+}
+.js {
+	width: 80%;
+	background-color: #f44336;
+}
+.c {
+	width: 85%;
+	background-color: #808080;
+}
+.python {
+	width: 75%;
+	background-color: #16bff3;
+}
+.contact-left {
+	width: 49.5%;
+	display: flex;
+	flex-direction: column;
+}
+.contact-left p:first-child {
+	font-size: 1.5em;
+	font-weight: 600;
+}
+.detail {
+	margin: 15px 0;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	gap: 15px;
+}
+.detail p {
+	font-size: 1.3em;
+}
+.detail p:first-child i {
+	font-size: 1.5em;
+	color: #8500cd;
+}
+.contact-container {
+	padding: 4%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.contact-right form {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	gap: 15px;
+}
+.contact-right p {
+	font-size: 2em;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.contact-right form input,
+.contact-right form textarea {
+	padding: 8px;
+	outline: none;
+	border-radius: 5px;
+	border: 2px solid #8500cd;
+	font-size: 15px;
+	color: #8500cd;
+	width: 70%;
+}
+
+.footer {
+	width: 100%;
+	background-color: #000;
+}
+.footer p {
+	padding: 10px;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+}
+.footer p a {
+	color: #9b1ddf;
+}
+/* Media Query */
+@media (max-width: 825px) {
+	.navbar .max-width .menu-class {
+		display: none;
+	}
+	.navbar .max-width .show {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: start;
+		gap: 3px;
+		height: 50%;
+	}
+	.navbar .max-width {
+		justify-content: space-between;
+		padding: 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: start;
+	}
+	#humberger i {
+		display: block;
+	}
+	.about {
+		padding: 80px 0 0;
+	}
+	.about-container {
+		flex-direction: column;
+		width: 100%;
+		gap: 25px;
+	}
+	.about-container .about-left,
+	.about-container .about-right {
+		width: 100%;
+		text-align: center;
+	}
+	.mySkills {
+		margin-top: 80px;
+	}
+	.mySkills-container {
+		flex-direction: column;
+		justify-content: center;
+		padding: 0;
+		width: 90%;
+	}
+	.mySkills-container .mySkills-left {
+		width: 90%;
+	}
+	.mySkills-container .mySkills-left h2,
+	.mySkills-container .mySkills-left p {
+		text-align: center;
+		margin-top: 10px;
+	}
+	.mySkills-container .about-left {
+		width: 70%;
+	}
+	.contact {
+		margin-top: 80px;
+	}
+	.contact-container {
+		flex-direction: column;
+		margin-bottom: 40px;
+	}
+	.contact-container .contact-left,
+	.contact-container .contact-right {
+		width: 80%;
+	}
+	.contact-right form {
+		justify-content: start;
+	}
+}
+@media (max-width: 400px) {
+	.detail p.email-text {
+		font-size: 0.9em;
+	}
+}

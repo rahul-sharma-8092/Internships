@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<!-- Created by Rahul Kumar Sharma -->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Link CSS -->
+		<link rel="stylesheet" href="./style.css" />
+
+		<title>Countdown Timer | Rahul Sharma</title>
+	</head>
+	<body>
+		<main class="form-container">
+			<form class="event-form" id="event-form">
+				<h2 class="event-form_title">New Event</h2>
+				<label for="title">
+					<input type="text" placeholder="Enter an Event Title" id="title" />
+				</label>
+				<label for="event">
+					<input type="datetime-local" id="event" />
+				</label>
+				<button type="submit">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="16"
+						height="16"
+						fill="currentColor"
+						class="bi bi-calendar2-plus"
+						viewBox="0 0 16 16"
+					>
+						<path
+							d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"
+						/>
+						<path
+							d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4zM8 8a.5.5 0 0 1 .5.5V10H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V11H6a.5.5 0 0 1 0-1h1.5V8.5A.5.5 0 0 1 8 8z"
+						/>
+					</svg>
+					Add New Countdown
+				</button>
+			</form>
+		</main>
+
+		<!-- Timer Part -->
+		<main class="event-container hidden">
+			<div class="event">
+				<button class="event_btn">
+					<i class="fa-solid fa-trash"></i>
+				</button>
+				<h2 class="event_title">Title</h2>
+				<div class="event_contdown">
+					<div class="event_item">
+						<p class="event_item-title" id="day_title">15</p>
+						<p id="day_name">Days</p>
+					</div>
+					<div class="event_item">
+						<p class="event_item-title" id="hour_title">15</p>
+						<p id="hour_name">Hours</p>
+					</div>
+					<div class="event_item">
+						<p class="event_item-title" id="minute_title">15</p>
+						<p id="minute_name">Minutes</p>
+					</div>
+					<div class="event_item">
+						<p class="event_item-title" id="second_title">15</p>
+						<p id="second_name">Seconds</p>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- Footer -->
+		<footer class="footer">
+			<p>
+				Developed by
+				<a href="https://www.linkedin.com/in/rahul-sharma-giet/" target="_blank">
+					Er. Rahul Kumar Sharma</a
+				>
+				&copy; copyright 2023.
+				<a href="https://github.com/rahul-sharma-8092" target="_blank" class="social-media">
+					<i class="fa-brands fa-github"></i>
+				</a>
+				<a
+					href="https://www.linkedin.com/in/rahul-sharma-giet/"
+					target="_blank"
+					class="social-media"
+				>
+					<i class="fa-brands fa-linkedin"></i>
+				</a>
+			</p>
+		</footer>
+
+		<!-- Font Awesome CDN -->
+		<script src="https://kit.fontawesome.com/a6d014f8b7.js" crossorigin="anonymous"></script>
+
+		<!-- Animation Script -->
+		<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+		<!-- JavaScript File -->
+		<script src="./script.js"></script>
+	</body>
+</html>
