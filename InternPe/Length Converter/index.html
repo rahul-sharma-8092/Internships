@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Created by Rahul Kumar Sharma -->
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://kit.fontawesome.com/3e6491bf19.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Length converter | Rahul Sharma</title>
+	</head>
+
+	<body>
+		<main>
+			<div class="title_container">
+				<h2>length converter</h2>
+			</div>
+
+			<div class="amount_container">
+				<label for="amount">Enter Amount</label>
+				<input type="number" name="amount" id="amount" placeholder="Enter number..." />
+			</div>
+
+			<div class="unit_container">
+				<!-- left -->
+				<div class="left">
+					<p>From</p>
+					<div class="select_container">
+						<select name="from" id="from">
+							<option value="centimeter">centimeter</option>
+						</select>
+					</div>
+				</div>
+
+				<!-- middle -->
+				<div class="middle">
+					<i class="fas fa-cog fa-spin" style="font-size: 24px"></i>
+				</div>
+
+				<!-- right -->
+				<div class="right">
+					<p>To</p>
+					<div class="select_container to">
+						<select name="to" id="to">
+							<option value="centimeter">centimeter</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="formular_container">
+				<span class="title">formula</span>
+				<span class="content">&nbsp;&nbsp; Here the formula is genereted....</span>
+			</div>
+
+			<div class="result_container">
+				<label for="result">Result</label>
+				<input type="text" name="result" id="result" placeholder="Result..." />
+			</div>
+
+			<div class="footer">
+				<p>
+					Copyright &copy; 2023 &nbsp;&nbsp; | &nbsp;&nbsp;
+					<a href="https://www.linkedin.com/in/rahul-sharma-giet/" target="_blank"
+						>Rahul Kumar Sharma</a
+					>
+				</p>
+			</div>
+		</main>
+
+		<script src="main.js"></script>
+	</body>
+</html>
